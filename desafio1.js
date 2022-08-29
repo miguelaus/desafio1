@@ -55,7 +55,7 @@ switch (plato1){
 */
 /*---------------------- DO WHILE ------------------------*/
 
-
+/*
 let nombreUsuario = prompt("Ingrese su nombre de usuario porfavor")
 
 let condicion = true
@@ -64,7 +64,7 @@ let saldo = 1000
 
 conocerSaldo = "si"
 
-do {
+/*do {
 
 	let password = prompt("por favor ingrese su password")
 
@@ -74,18 +74,57 @@ do {
 
     while(condicion = true) 
 
+    let condicion = true	
+
 	do { 
+
+		nombreUsuario = prompt("ingrese su nombre de usuario porfavor")
 
 		let conocerSaldo = prompt("desea conocer su saldo? si o no") 
 
-		if(conocerSaldo == "si") {alert("su saldo es "+ saldo)}
+		if(conocerSaldo == "si" || conocerSaldo == "SI" || conocerSaldo =="sI" || conocerSaldo == "Si") {alert(`Su nombre es ${nombreUsuario} y su saldo es ${saldo}`)} else if(conocerSaldo == "no" || conocerSaldo == "No") {condicion = false alert("Gracias por su consulta");} 
 
-		condicion = false
+    } while(condicion != false)}
 
-    } while(concidicion = true)}
+	console.log(`Su nombre es ${nombreUsuario} y su saldo es ${saldo}`)}
+
+}while(condicion = true) */
 
 
-	console.log(`Su nombre es ${nombreUsuario} y su saldo es ${saldo}`)
 
-}while(condicion)
+
+/* ------------------  Correccion sin contraseña -----------------*/
+let saldo = 1000
+
+/* do {
+    
+    let password = prompt("por favor ingrese su password")
+    
+	if (password === "churro")  {alert("Gracias puede realizar una consulta de saldo")
+    
+	condicion = false
+    
+    while(condicion == true)  */
+    
+    let condicion = true
+	do { 
+        let nombreUsuario = prompt("Ingrese su nombre de usuario porfavor")
+		let conocerSaldo = prompt("desea conocer su saldo? si o no") 
+        
+		if(conocerSaldo == "si" || conocerSaldo == "SI") {
+            console.log(`Su nombre es ${nombreUsuario} y su saldo es ${saldo}`)
+            alert("su saldo es " + saldo)
+
+        }else if(conocerSaldo == "no" || conocerSaldo == "NO"){
+            condicion = false
+            alert("Gracias por consultar su saldo");
+        }
+        
+    } while(condicion != false)
+
+ document.write("hola mundo")
+
+
+/* 
+}while(condicion) */
 
